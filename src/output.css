@@ -554,11 +554,157 @@ video {
   display: none;
 }
 
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.mt-\[24px\] {
+  margin-top: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-\[11px\] {
+  gap: 11px;
+}
+
+.gap-\[6px\] {
+  gap: 6px;
+}
+
+.gap-\[38px\] {
+  gap: 38px;
+}
+
+.rounded-\[32px\] {
+  border-radius: 32px;
+}
+
+.rounded-\[16px\] {
+  border-radius: 16px;
+}
+
+.bg-\[\#f4f7ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 247 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#F4F7FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 247 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#ffffff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.p-\[\] {
+  padding: ;
+}
+
+.px-\[6px\] {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.py-\[13px\] {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.py-\[18px\] {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.px-\[24px\] {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.px-\[17px\] {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
 .font-poppins {
   font-family: Poppins, sans-serif;
 }
 
-.text-red-500 {
+.text-\[35\.67px\] {
+  font-size: 35.67px;
+}
+
+.text-\[32px\] {
+  font-size: 32px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-\[\#00303C\] {
   --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+  color: rgb(0 48 60 / var(--tw-text-opacity, 1));
 }

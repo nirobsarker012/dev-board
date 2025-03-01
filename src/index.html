@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="font-poppins bg-[#f4f7ff]">
-    <header>
+    <header id="header">
       <div class="container">
         <!-- NAV SECTION -->
         <nav class="py-[18px] px-[24px] bg-[#ffffff] mt-[24px] rounded-[16px]">
@@ -49,14 +49,14 @@
         </nav>
       </div>
     </header>
-    <main class="">
+    <main>
       <!-- HERO SECTION -->
-      <section id="">
+      <section id="main">
         <div class="container">
           <div class="flex justify-between mt-[20px]">
             <!-- Part -1  -->
-            <div class="bg-[#ffffff] p-[20px] rounded-[16px]">
-              <div class="min-w-[1146px]">
+            <div class="bg-[#ffffff] h-[750px] mb-10 p-[20px] rounded-[16px]">
+              <div class="min-w-[1100px]">
                 <div
                   class="flex items-center justify-between border-b-2 border-dashed border-[rgba(55,82,253,0.2)] pb-[24px]"
                 >
@@ -71,7 +71,8 @@
                   </div>
 
                   <div
-                    class="bg-blue-500 flex items-center justify-center gap-[22px] pt-[30px] pr-[80px] pb-[22px] pl-[36px] rounded-[12px]"
+                    id="discover"
+                    class="bg-blue-500 flex items-center justify-center gap-[22px] pt-[30px] pr-[80px] pb-[22px] pl-[36px] rounded-[12px] cursor-pointer"
                   >
                     <img src="../assets/board.png" alt="" class="" />
                     <h3 class="text-[24px] text-[#ffffff] w-[270px]">
@@ -89,13 +90,240 @@
                     </h3>
                   </div>
                 </div>
+                <!-- BOX ITEMS SECTION -->
+                <section class="py-[26px]">
+                  <div class="flex flex-col gap-4">
+                    <!-- ROW-1 -->
+                    <div class="flex justify-between">
+                      <div
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                      >
+                        <span
+                          class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
+                          >ShopEase</span
+                        >
+                        <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
+                          Fix Mobile Button Issue
+                        </h2>
+                        <div
+                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
+                        >
+                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                            Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly and
+                            ensure onClick works properly
+                          </p>
+                        </div>
+                        <div
+                          class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)] mt-[14px]"
+                        ></div>
+                        <div
+                          class="flex justify-between items-center mt-[13px]"
+                        >
+                          <div class="text-[#00303C] flex flex-col">
+                            <span class="text-[14px]">Deadline</span>
+                            <span>21 March 2025</span>
+                          </div>
+                          <button
+                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                          >
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                      >
+                        <span
+                          class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
+                          >CloudSync</span
+                        >
+                        <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
+                          Add Dark Mode
+                        </h2>
+                        <div
+                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
+                        >
+                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                            Store the user's preference in localStorage, update
+                            CSS variables dynamically, and apply a smooth
+                            transition effect.
+                          </p>
+                        </div>
+                        <div
+                          class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)] mt-[14px]"
+                        ></div>
+                        <div
+                          class="flex justify-between items-center mt-[13px]"
+                        >
+                          <div class="text-[#00303C] flex flex-col">
+                            <span class="text-[14px]">Deadline</span>
+                            <span>21 March 2025</span>
+                          </div>
+                          <button
+                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                          >
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                      >
+                        <span
+                          class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
+                          >SwiftPay</span
+                        >
+                        <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
+                          Optimize Home page 
+                        </h2>
+                        <div
+                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
+                        >
+                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                            Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly and
+                            ensure onClick works properly
+                          </p>
+                        </div>
+                        <div
+                          class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)] mt-[14px]"
+                        ></div>
+                        <div
+                          class="flex justify-between items-center mt-[13px]"
+                        >
+                          <div class="text-[#00303C] flex flex-col">
+                            <span class="text-[14px]">Deadline</span>
+                            <span>21 March 2025</span>
+                          </div>
+                          <button
+                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                          >
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ROW -2 -->
+                    <div class="flex justify-between">
+                      <div
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                      >
+                        <span
+                          class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
+                          >Meta</span
+                        >
+                        <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
+                          Add new emoji 🤲
+                        </h2>
+                        <div
+                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
+                        >
+                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                            Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly and
+                            ensure onClick works properly
+                          </p>
+                        </div>
+                        <div
+                          class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)] mt-[14px]"
+                        ></div>
+                        <div
+                          class="flex justify-between items-center mt-[13px]"
+                        >
+                          <div class="text-[#00303C] flex flex-col">
+                            <span class="text-[14px]">Deadline</span>
+                            <span>21 March 2025</span>
+                          </div>
+                          <button
+                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                          >
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                      >
+                        <span
+                          class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
+                          >Google LLC</span
+                        >
+                        <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
+                          Integrate OpenAI API
+                        </h2>
+                        <div
+                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
+                        >
+                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                            Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly and
+                            ensure onClick works properly
+                          </p>
+                        </div>
+                        <div
+                          class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)] mt-[14px]"
+                        ></div>
+                        <div
+                          class="flex justify-between items-center mt-[13px]"
+                        >
+                          <div class="text-[#00303C] flex flex-col">
+                            <span class="text-[14px]">Deadline</span>
+                            <span>21 March 2025</span>
+                          </div>
+                          <button
+                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                          >
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+                      <div
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                      >
+                        <span
+                          class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
+                          >Glassdoar</span
+                        >
+                        <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
+                          Improve Job searching
+                        </h2>
+                        <div
+                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
+                        >
+                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                            Debug using Chrome DevTools, check for overlapping
+                            elements, and ensure onClick works properly and
+                            ensure onClick works properly
+                          </p>
+                        </div>
+                        <div
+                          class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)] mt-[14px]"
+                        ></div>
+                        <div
+                          class="flex justify-between items-center mt-[13px]"
+                        >
+                          <div class="text-[#00303C] flex flex-col">
+                            <span class="text-[14px]">Deadline</span>
+                            <span>21 March 2025</span>
+                          </div>
+                          <button
+                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                          >
+                            Completed
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
               </div>
             </div>
             <!-- Part -2 -->
-            <div class="bg-white min-h-screen rounded-[16px]">
+            <div class="bg-white h-[750px] rounded-[16px]">
               <!-- ACTIVITY LOG SECTION -->
               <div
-                class="w-[300px] border-b-2 border-dashed border-[rgba(55,82,253,0.2)] pb-[24px]"
+                class="w-[330px] border-b-2 border-dashed border-[rgba(55,82,253,0.2)] pb-[24px]"
               >
                 <div class="flex flex-col items-center justify-center">
                   <div class="flex items-center gap-[17px] mt-[24px]">
@@ -113,9 +341,104 @@
           </div>
         </div>
       </section>
+
+      <!-- Blog Page -->
+      <section id="blog">
+        <div class="container">
+          <!-- Blog Header Section -->
+          <div
+            class="py-[18px] px-[24px] bg-[#ffffff] mt-[24px] rounded-[16px] shadow-md"
+          >
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-[11px] cursor-pointer">
+                <img src="../assets/logo.png" alt="devboard" class="" />
+                <h2 class="text-[#00303C] text-[35.67px]">
+                  Dev<span class="font-extrabold">Board</span>
+                </h2>
+              </div>
+              <!-- Button SECTIONS -->
+              <div id="back-btn">
+                <button
+                  class="bg-[#3752FD] text-[#ffffff] text-[16px] py-[10px] px-[20px] rounded-[8px] mt-[15px]"
+                >
+                  Back To Desk
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- BLOG HERO SECTION -->
+
+          <div class="flex justify-center items-center py-4">
+            <h3 class="font-bold text-[22px]">Blogs</h3>
+          </div>
+          <!-- Hero Content Section -->
+          <div class="flex flex-col gap-4">
+            <div class="bg-white rounded-[8px]">
+              <h2 class="p-[16px] text-[18px] font-bold">
+                Question-1: What are the different ways to select on element in
+                the DOM?
+              </h2>
+              <div
+                class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)]"
+              ></div>
+              <p class="p-[16px] text-[16px] text-[#696363]">
+                I can select an element in the DOM using methods like
+                getElementById, getElementsByClassName, getElementsByTagName,
+                querySelector, and querySelectorAll.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-[8px]">
+              <h2 class="p-[16px] text-[18px] font-bold">
+                Question-2: What is the different between innerHTML and
+                textContent?
+              </h2>
+              <div
+                class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)]"
+              ></div>
+              <p class="p-[16px] text-[16px] text-[#696363]">
+                innerHTML returns or sets the HTML content within an element,
+                including tags, while textContent returns or sets only the plain
+                text content, ignoring HTML tags.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-[8px]">
+              <h2 class="p-[16px] text-[18px] font-bold">
+                Question-3:What is event delegation in the DOM?
+              </h2>
+              <div
+                class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)]"
+              ></div>
+              <p class="p-[16px] text-[16px] text-[#696363]">
+                Event delegation is a technique where you add a single event
+                listener to a parent element to handle events for all its child
+                elements, leveraging event bubbling to manage dynamic or
+                multiple elements efficiently.
+              </p>
+            </div>
+
+            <div class="bg-white rounded-[8px]">
+              <h2 class="p-[16px] text-[18px] font-bold">
+                Question-4: What is event bubbling in the DOM?
+              </h2>
+              <div
+                class="border-b-2 border-dashed border-[rgba(55,82,253,0.2)]"
+              ></div>
+              <p class="p-[16px] text-[16px] text-[#696363]">
+                Event bubbling is a behavior in the DOM where an event triggered
+                on a child element propagates upward through its ancestor
+                elements in the hierarchy, allowing parent elements to handle
+                the event.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Js file -->
     <script src="../utilities/fu.js"></script>
+    <script src="../js/toggle.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

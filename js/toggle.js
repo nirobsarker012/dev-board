@@ -1,13 +1,20 @@
-document.querySelector("#blog").style.display = "none";
+const header = document.querySelector("#header");
+const main = document.querySelector("#main");
+const blog = document.querySelector("#blog");
 
-document.querySelector("#discover").addEventListener("click", function () {
-  document.querySelector("#header").style.display = "none";
-  document.querySelector("#main").style.display = "none";
-  document.querySelector("#blog").style.display = "block";
+const discoverBtn = document.querySelector("#discover");
+const backBtn = document.querySelector("#back-btn button");
+
+discoverBtn.addEventListener("click", () => {
+  header.classList.add("hidden");
+  main.classList.add("hidden");
+
+  blog.classList.remove("hidden");
 });
 
-document.querySelector("#back-btn").addEventListener("click", function () {
-  document.querySelector("#header").style.display = "block";
-  document.querySelector("#main").style.display = "block";
-  document.querySelector("#blog").style.display = "none";
+backBtn.addEventListener("click", () => {
+  header.classList.remove("hidden");
+  main.classList.remove("hidden");
+
+  blog.classList.add("hidden");
 });

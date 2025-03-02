@@ -19,7 +19,7 @@
     <title>Dev Board</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
-  <body class="font-poppins bg-[#f4f7ff]">
+  <body class="font-poppins bg-[#f4f7ff] duration-500">
     <header id="header">
       <div class="container">
         <!-- NAV SECTION -->
@@ -37,12 +37,13 @@
                 class="flex items-center gap-[6px] bg-[#F4F7FF] py-[13px] px-[17px] rounded-[32px]"
               >
                 <img src="../assets/checkbox.png" alt="" class="" />
-                <h3 class="font-bold text-[30px]">23</h3>
+                <h3 class="font-bold text-[30px] completed-count">00</h3>
               </div>
               <img
                 src="../assets/theme-btn.png"
                 alt=""
                 class="cursor-pointer"
+                id="theme-btn"
               />
             </div>
           </div>
@@ -53,9 +54,9 @@
       <!-- HERO SECTION -->
       <section id="main">
         <div class="container">
-          <div class="flex justify-between mt-[20px]">
+          <div class="flex justify-between mt-[20px] pb-10">
             <!-- Part -1  -->
-            <div class="bg-[#ffffff] h-[750px] mb-10 p-[20px] rounded-[16px]">
+            <div class="bg-[#ffffff] min-h-[750px] p-[20px] rounded-[16px]">
               <div class="min-w-[1100px]">
                 <div
                   class="flex items-center justify-between border-b-2 border-dashed border-[rgba(55,82,253,0.2)] pb-[24px]"
@@ -66,7 +67,7 @@
                     </div>
                     <div class="text-[#00303C]">
                       <span class="text-[16px]">Task Assigned</span>
-                      <h3 class="font-bold text-[30px]">05</h3>
+                      <h3 class="font-bold text-[30px] task-count">06</h3>
                     </div>
                   </div>
 
@@ -92,11 +93,11 @@
                 </div>
                 <!-- BOX ITEMS SECTION -->
                 <section class="py-[26px]">
-                  <div class="flex flex-col gap-4">
+                  <div id="card-container" class="flex flex-col gap-4">
                     <!-- ROW-1 -->
                     <div class="flex justify-between">
                       <div
-                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px] task-card"
                       >
                         <span
                           class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
@@ -105,10 +106,10 @@
                         <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
                           Fix Mobile Button Issue
                         </h2>
-                        <div
-                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
-                        >
-                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                        <div class="bg-white rounded-[8px] p-4">
+                          <p
+                            class="text-[rgba(0,0,0,1)] text-[16px] line-clamp-3"
+                          >
                             Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly and
                             ensure onClick works properly
@@ -125,14 +126,14 @@
                             <span>21 March 2025</span>
                           </div>
                           <button
-                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                            class="bg-[#3752FD] disabled:bg-[#a0abf5] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff] complete-btn"
                           >
                             Completed
                           </button>
                         </div>
                       </div>
                       <div
-                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px] task-card"
                       >
                         <span
                           class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
@@ -141,10 +142,10 @@
                         <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
                           Add Dark Mode
                         </h2>
-                        <div
-                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
-                        >
-                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                        <div class="bg-white rounded-[8px] p-4">
+                          <p
+                            class="text-[rgba(0,0,0,1)] text-[16px] line-clamp-3"
+                          >
                             Store the user's preference in localStorage, update
                             CSS variables dynamically, and apply a smooth
                             transition effect.
@@ -161,14 +162,14 @@
                             <span>21 March 2025</span>
                           </div>
                           <button
-                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                            class="bg-[#3752FD] disabled:bg-[#a0abf5] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff] complete-btn"
                           >
                             Completed
                           </button>
                         </div>
                       </div>
                       <div
-                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px] task-card"
                       >
                         <span
                           class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
@@ -177,10 +178,10 @@
                         <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
                           Optimize Home page 
                         </h2>
-                        <div
-                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
-                        >
-                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                        <div class="bg-white rounded-[8px] p-4">
+                          <p
+                            class="text-[rgba(0,0,0,1)] text-[16px] line-clamp-3"
+                          >
                             Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly and
                             ensure onClick works properly
@@ -197,7 +198,7 @@
                             <span>21 March 2025</span>
                           </div>
                           <button
-                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                            class="bg-[#3752FD] disabled:bg-[#a0abf5] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff] complete-btn"
                           >
                             Completed
                           </button>
@@ -207,7 +208,7 @@
                     <!-- ROW -2 -->
                     <div class="flex justify-between">
                       <div
-                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px] task-card"
                       >
                         <span
                           class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
@@ -216,10 +217,10 @@
                         <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
                           Add new emoji 🤲
                         </h2>
-                        <div
-                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
-                        >
-                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                        <div class="bg-white rounded-[8px] p-4">
+                          <p
+                            class="text-[rgba(0,0,0,1)] text-[16px] line-clamp-3"
+                          >
                             Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly and
                             ensure onClick works properly
@@ -236,14 +237,14 @@
                             <span>21 March 2025</span>
                           </div>
                           <button
-                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                            class="bg-[#3752FD] disabled:bg-[#a0abf5] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff] complete-btn"
                           >
                             Completed
                           </button>
                         </div>
                       </div>
                       <div
-                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px] task-card"
                       >
                         <span
                           class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
@@ -252,10 +253,10 @@
                         <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
                           Integrate OpenAI API
                         </h2>
-                        <div
-                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
-                        >
-                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                        <div class="bg-white rounded-[8px] p-4">
+                          <p
+                            class="text-[rgba(0,0,0,1)] text-[16px] line-clamp-3"
+                          >
                             Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly and
                             ensure onClick works properly
@@ -272,14 +273,14 @@
                             <span>21 March 2025</span>
                           </div>
                           <button
-                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                            class="bg-[#3752FD] disabled:bg-[#a0abf5] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff] complete-btn"
                           >
                             Completed
                           </button>
                         </div>
                       </div>
                       <div
-                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px]"
+                        class="bg-[#f4f7ff] rounded-[16px] max-w-[340px] p-[24px] task-card"
                       >
                         <span
                           class="bg-white text-[#00303C] text-[16px] px-[16px] py-[8px] rounded-[8px]"
@@ -288,10 +289,10 @@
                         <h2 class="text-[#00303C] text-[24px] font-medium mt-4">
                           Improve Job searching
                         </h2>
-                        <div
-                          class="overflow-hidden text-ellipsis bg-white rounded-[8px] h-[40px] p-4"
-                        >
-                          <p class="text-[rgba(0,0,0,1)] text-[16px]">
+                        <div class="bg-white rounded-[8px] p-4">
+                          <p
+                            class="text-[rgba(0,0,0,1)] text-[16px] line-clamp-3"
+                          >
                             Debug using Chrome DevTools, check for overlapping
                             elements, and ensure onClick works properly and
                             ensure onClick works properly
@@ -308,7 +309,7 @@
                             <span>21 March 2025</span>
                           </div>
                           <button
-                            class="bg-[#3752FD] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff]"
+                            class="bg-[#3752FD] disabled:bg-[#a0abf5] rounded-[8px] py-[10px] px-[20px] text-[16px] text-[#ffffff] complete-btn"
                           >
                             Completed
                           </button>
@@ -320,7 +321,7 @@
               </div>
             </div>
             <!-- Part -2 -->
-            <div class="bg-white h-[750px] rounded-[16px]">
+            <div class="bg-white min-h-[750px] rounded-[16px]">
               <!-- ACTIVITY LOG SECTION -->
               <div
                 class="w-[330px] border-b-2 border-dashed border-[rgba(55,82,253,0.2)] pb-[24px]"
@@ -331,19 +332,22 @@
                     <span class="text-[#00303C] text-[20px]">Activity Log</span>
                   </div>
                   <button
-                    class="bg-[#3752FD] text-[#ffffff] text-[16px] py-[10px] px-[20px] rounded-[8px] mt-[15px]"
+                    class="bg-[#3752FD] text-[#ffffff] text-[16px] py-[10px] px-[20px] rounded-[8px] mt-[15px] clear-btn"
                   >
                     Clear History
                   </button>
                 </div>
               </div>
+              <div
+                class="histories flex flex-col gap-7 pt-6 px-7 [&>p]:bg-[#F4F7FF] [&>p]:rounded-[8px] [&>p]:p-2.5 [&>p]:opacity-70"
+              ></div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Blog Page -->
-      <section id="blog">
+      <section id="blog" class="hidden pb-10">
         <div class="container">
           <!-- Blog Header Section -->
           <div
@@ -437,7 +441,6 @@
       </section>
     </main>
     <!-- Js file -->
-    <script src="../utilities/fu.js"></script>
     <script src="../js/toggle.js"></script>
     <script src="../js/main.js"></script>
   </body>
